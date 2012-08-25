@@ -1,5 +1,6 @@
 ---
 layout: default
+project_name: Jekell_demo
 title: 我的Blog
 ---
 
@@ -9,6 +10,6 @@ title: 我的Blog
 
 <ul>
     {% for post in site.posts %}
-      <li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li>{{ post.date | date_to_string }} <a href="{{ site.project_name }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
